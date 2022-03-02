@@ -1,0 +1,80 @@
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.portrait {
+  width: 250px;
+}
+
+.input-container {
+  padding-top: 30px;
+}
+
+input {
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+button {
+  width: 17%;
+  margin-top: 24px;
+  display: block;
+  border: 1px solid black;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.output1 {
+  font-size: 24px;
+  margin-top: 20px;
+  padding: 23px 0;
+}
+
+span {
+  display: block;
+}
+
+.location,
+.forcast,
+.wind,
+.time {
+  margin-top: 10px;
+}

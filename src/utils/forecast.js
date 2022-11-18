@@ -5,7 +5,7 @@ const forecast = (data, callback) => {
   const { lat, long, locationName } = data;
 
   // url.
-  const access_key = 'fbadb263b1fcf914a168438770e966ab';
+  const access_key = process.env.WEATHERSTACK_API_KEY;
   const forecastUrl = `http://api.weatherstack.com/current?access_key=${access_key}&query=${lat},${long}`;
 
   request({ url: forecastUrl, json: true }, (err, { body }) => {

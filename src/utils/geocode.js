@@ -2,9 +2,10 @@ const request = require('request');
 
 const geocode = (address, callback) => {
   // url.
+  const access_key = process.env.MAPBOX_API_KEY;
   const geocodeUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
     address
-  )}.json?access_token=pk.eyJ1IjoibW80NzUiLCJhIjoiY2t1dTg5d2ZmMHJkdjJ1bzBqdWhieDlvNCJ9.D-wYkp6JNYKNnNPGCocu7A&limit=1`;
+  )}.json?access_token=${access_key}=1`;
 
   // Make and http request to get the lat, long of this place.
   request({ url: geocodeUrl, json: true }, (err, res) => {
